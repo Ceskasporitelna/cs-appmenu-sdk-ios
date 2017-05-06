@@ -1,0 +1,10 @@
+Carthage/Build
+CSAppMenuSDK/CSAppMenuSDK.xcodeproj/xcuserdata
+CSAppMenuSDK/CSAppMenuSDK.xcodeproj/project.xcworkspace/xcuserdata
+CSAppMenuSDK.xcworkspace/xcuserdata
+CSAppMenuSDK.xcodeproj/xcuserdata
+CSAppMenuSDK.xcodeproj/project.xcworkspace/xcuserdata
+Carthage
+fastlane/test_output
+.bundle
+vendor
