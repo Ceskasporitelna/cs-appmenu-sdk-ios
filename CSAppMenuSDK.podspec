@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = "CSAppMenuSDK"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.source       = {:tag => "v#{s.version}", :git => "https://github.com/Ceskasporitelna/cs-appmenu-sdk-ios.git" }
-  s.dependency   "CSCoreSDK", "~> 1.0"
+  s.dependency   "CSCoreSDK", "~> 2.0"
 
   s.summary      = "AppMenu SDK allows you to list other applications from from Česká spořitelna a.s. and check for app version"
   s.description  = "AppMenu SDK allows you to list other applications from from Česká spořitelna a.s. and check for app version. This library is only concerned with the data service. App must provide its own gui to display the apps."
