@@ -8,3 +8,4 @@ Carthage
 fastlane/test_output
 .bundle
 vendor
+Cartfile.resolved
