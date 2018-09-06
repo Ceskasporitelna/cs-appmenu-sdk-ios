@@ -91,9 +91,11 @@ public class AppManager: AppManagerApi
     fileprivate func attemptToLoadAppInfoFromDefaults()
     {
         if self.appInformation == nil{
-            if UIApplication.shared.isProtectedDataAvailable{
-                if let cachedAppInfoData:Data = UserDefaults.standard.object(forKey: appId) as? Data{
-                    self.appInformation = NSKeyedUnarchiver.unarchiveObject(with: cachedAppInfoData) as? AppInformation
+            DispatchQueue.main.async {
+                if UIApplication.shared.isProtectedDataAvailable{
+                    if let cachedAppInfoData:Data = UserDefaults.standard.object(forKey: self.appId) as? Data{
+                        self.appInformation = NSKeyedUnarchiver.unarchiveObject(with: cachedAppInfoData) as? AppInformation
+                    }
                 }
             }
         }
