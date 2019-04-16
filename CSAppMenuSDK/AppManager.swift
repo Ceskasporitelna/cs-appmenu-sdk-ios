@@ -233,7 +233,7 @@ public class AppManager: AppManagerApi
             self.isCheckingAppVersion = true
             
             let notificationCenter = NotificationCenter.default
-            notificationCenter.addObserver(self, selector: #selector(applicationDidBecomeActiveNotification), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+            notificationCenter.addObserver(self, selector: #selector(applicationDidBecomeActiveNotification), name: UIApplication.didBecomeActiveNotification, object: nil)
             
             self.appIsOutdatedCallback = appIsOutdatedCallback
             self.checkAppVersion()
